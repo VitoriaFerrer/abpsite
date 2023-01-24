@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>ABP Atividades e Brincadeiras Pedagogicas</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Vitoria Ferreira" />
+	<meta name="keywords" content="ABP, Brincadeiras, crianças, estimular, passo a passo, Pedagogicas" />
+	<meta name="description"
+	content="O Site foi criado no intuito de ajudar e auxiliar pais ou responsáveis com atividades e brincadeiras educativas que podem ser feitas em casa ou até mesmo em um passeio em família, assim mantendo as crianças longe das telas (Televisão e celular)." />
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+</head> 
+
+    <body>
+        <header>
+	       <img src="img/abp.png"/><br>
+	    </header>
+        <nav>
+			<a class="a-menu" href="index.html">HOME</a>
+			<a class="a-menu" href="index.html#pag-beneficio">BENEFICIOS</a>
+			<a class="a-menu" href="index.html#pag-brincadeiras">BRINCADEIRAS</a>
+			<a class="a-menu" href="index.html#pag-assistencia">ASSISTENCIA</a>
+			<a class="a-menu" href="#">AGENDAMENTOS</a>
+	    </nav>
+
+        <section id="pag-agendamentos">
+    		<h1>Agendamentos</h1>
+
+    		<p>Agende um horário para tirar suas dúvidas!</p>
+    		
+        <form name="" method="" action="">
+        	<label for="nome">Nome:</label>
+        	<input id="nome" type="text" name="nome_completo" placeholder="Digite seu nome completo" required autofocus/>
+
+        	<label for="email">E-mail</label>
+        	<input id="email" type="email" name="email" placeholder="nomeusuario@email.com"/>
+
+        	<label for="senha">Senha:</label>
+        	<input id="senha" type="password" name="senha" placeholder="somente números"/>
+
+        	<label for="celular">Celular:</label>
+        	<input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\d{4}.*?$"/>
+
+            <div id="data-hora-num">
+                <div>
+                	<label for="data">Data:</label>
+                	<input id="data" type="date" name="data"/>
+                </div>
+
+                <div>
+                	<label for="hora">Hora:</label>
+                	<input id="hora" type="time" name="hora"/>
+                </div>
+
+                <div>
+                	<label for="duvidas">Dúvidas:</label>
+                	<input id="duvidas" type="number" name="aulas" min="1" max="10" step="1"/>
+                </div>
+
+            </div>
+
+        	<label for="categoria">Categoria:</label><br/>
+        	<select id="categoria" name="categoria">
+        		<option>Selecione</option>
+        		<option value="estudante">Estudante</option>
+        		<option value="professor">Professor (a)</option>
+        		<option value="mae">Mãe/Pai</option>
+        		<option value="pai">Responsável</option>	
+        	</select>
+
+        	<fieldset>
+        		<legend>Gênero:</legend>
+        		<input id="masc" type="radio" name="genero" value="masc"><label for="masc">Masculino</label><br/>
+        		<input id="fem" type="radio" name="genero" value="fem"><label for="fem">Feminino</label>
+        	</fieldset>
+
+        	<fieldset>
+        		<legend>Atividades:</legend>
+        		<input id="aboc" type="checkbox" name="atividade" value="abocadourso"><label for="">A boca do Urso</label><br/>
+        		<input id="proj" type="checkbox" name="atividade" value="projetostop"><label for="">Projeto Stop</label><br/>
+        		<input id="reco" type="checkbox" name="atividade" value="recontoliterarioacasasonolenta"><label for="">Reconto literario: A casa Sonolenta</label><br/>
+        		<input id="amar" type="checkbox" name="atividade" value="amarelinha"><label for="">Amarelinha</label><br/>
+        	</fieldset>
+
+        	<label for="msg">Mensagem</label><br/>
+        	<textarea id="msg" cols="52" rows="4">
+        	</textarea>
+
+            <div id="botoes-form">
+            <input type="submit" name="bnt-agendar" value="AGENDAR">
+            <input type="reset" name="btn-cancelar" value="CANCELAR">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+		<p>Desenvolvido por <a href="https://www.instagram.com/vitoriaaaa_ferreira/"
+				target="_blank"><b>Vitória Ferreira</b></a> - 2022</p>
+    </footer>
+</body>
+
+</html>
